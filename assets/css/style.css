@@ -311,7 +311,7 @@ header .menu ul {
     text-transform: uppercase;
     padding: 0;
     line-height: 75px;
-    text-align: right;
+    text-align: left;
 }
 header .menu ul li {
     display: inline;
@@ -326,10 +326,10 @@ header .menu ul li:hover {
 header .menu ul li a {
     text-decoration: none;
     color: inherit;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
 }
 header .menu ul li .active {
-    color: #D8C9C9;
+    border-bottom: 2px solid #F00;
 }
 header .menu ul li a:hover {
     text-decoration: none;
@@ -373,7 +373,7 @@ header .menu ul li ul li ul {
 
 .first-content .pic {
     width: 100%;
-    height: 550px;
+    height: 350px;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -964,6 +964,48 @@ footer .main-footer .icons{
 footer .main-footer .icons ul li{
     display:inline;
     margin-right: 10px;
+}
+
+
+/* 会社情報CSS */
+.info {
+    font-family: "メイリオ","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro, Osaka", "ＭＳ Ｐゴシック", "Meiryo, MS PGothic, sans-serif" !important;
+}
+.h1TxtVer {
+    clear: both;
+    width: 700px;
+    margin: 0 0 40px;
+}
+.topTxt {
+    margin: 0 0 70px 0;
+}
+.address {
+    margin: 0 0 70px 0;
+}
+.address .line {
+    height: 1px;
+    width: 50px;
+    background-color: #2E86C1;
+    margin: 0 0 30px;
+}
+.address td, .address th {
+    border:1px solid #bbb  !important;
+    padding:10px 20px 7px !important;
+    line-height:3.0 !important;
+    background:#fff;
+}
+.map {
+    line-height: 1.6;
+}
+.address th { 
+    background:#ddd; 
+    font-weight:normal; 
+}
+.address h2 {
+    padding: 0 0 10px;
+    font-size: 185.7%;
+    line-height: 1.25;
+    font-weight: normal;
 }
 
 
