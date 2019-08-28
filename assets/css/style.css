@@ -970,10 +970,11 @@ footer .main-footer .icons ul li{
 /* 会社情報CSS */
 .info {
     font-family: "メイリオ","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro, Osaka", "ＭＳ Ｐゴシック", "Meiryo, MS PGothic, sans-serif" !important;
+    display: block;
 }
 .h1TxtVer {
     clear: both;
-    width: 700px;
+    width: 100%;
     margin: 0 0 40px;
 }
 .topTxt {
@@ -988,12 +989,6 @@ footer .main-footer .icons ul li{
     background-color: #2E86C1;
     margin: 0 0 30px;
 }
-.address td, .address th {
-    border:1px solid #bbb  !important;
-    padding:10px 20px 7px !important;
-    line-height:3.0 !important;
-    background:#fff;
-}
 .map {
     line-height: 1.6;
 }
@@ -1006,6 +1001,27 @@ footer .main-footer .icons ul li{
     font-size: 185.7%;
     line-height: 1.25;
     font-weight: normal;
+}
+.table{
+    border-top: 1px solid #bbb  !important;
+    border-right: 1px solid #bbb  !important;
+    margin: 0 0 70px 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap after the items fill the row */
+    
+    /* Safari specific rules */
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
+.th{
+    border-bottom:1px solid #bbb  !important;
+    border-left:1px solid #bbb  !important;
+    padding:0px 10px 0px !important;
+    line-height:3.0 !important;
+}
+.tdbgd{
+    background:#ddd; 
+    font-weight:normal; 
 }
 
 
