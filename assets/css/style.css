@@ -653,6 +653,9 @@ header .menu ul li ul li ul {
 .blog-firstsection .items2 {
     padding-top: 40px;
 }
+.blog-firstsection .col-md-6 {
+    float: right;
+}
 .blog-firstsection .pic-inner span {
     color: #763A31;
 }
@@ -761,11 +764,10 @@ header .menu ul li ul li ul {
     font-family: 'Raleway', sans-serif;
 }
 .about-third-content {
-    background-color: #E5E7E9;
     padding: 80px 0;
 }
 .about-third-content h4 {
-    font-size: 18px;
+    font-size: 30px;
     letter-spacing: 1px;
     font-style: italic;
 }
@@ -1022,6 +1024,10 @@ footer .main-footer .icons ul li{
 .tdbgd{
     background:#ddd; 
     font-weight:normal; 
+}
+
+.aaa{
+    height: 300px;
 }
 
 
