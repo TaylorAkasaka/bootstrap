@@ -132,7 +132,7 @@ ol {
     top: 75px;
     margin: 0;
     padding: 20px 35px;
-    background-color: #444;
+    background-color: #2e86c19c;
 }
 
 .slicknav_menu .slicknav_nav li ul {
@@ -373,7 +373,7 @@ header .menu ul li ul li ul {
 
 .first-content .pic {
     width: 100%;
-    height: 350px;
+    height: 800px;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -889,7 +889,7 @@ header .menu ul li ul li ul {
     letter-spacing: 1px;
 }
 .contact-content .items2 {
-    text-align: right;
+    text-align: left;
 }
 .contact-content .items .line {
     height: 1px;
@@ -936,7 +936,7 @@ header .menu ul li ul li ul {
    -------------------------- */
 
 footer{
-    padding:60px 0;
+    padding:10px 0;
     background: #f7f7f7;
     position: relative;
     font-size: 14px;
@@ -1004,6 +1004,35 @@ footer .main-footer .icons ul li{
     line-height: 1.25;
     font-weight: normal;
 }
+
+.font17{
+    font-size: 17px;
+}
+
+.footer {
+	clear: both;
+	width: 100%;
+	padding: 8px 0;
+}
+
+.footerInner {
+	width: 960px;
+	margin: 0 auto;
+}
+.ulFooter06 {
+	float: left;
+}
+.ulFooter06 a {
+	float: left;
+	margin: 0 25px 0 0;
+	font-size: 78.6%;
+    color: #666;
+}
+.footerInner div {
+	float: right;
+	font-size: 78.6%;
+}
+
 .table{
     border-top: 1px solid #bbb  !important;
     border-right: 1px solid #bbb  !important;
@@ -1011,9 +1040,9 @@ footer .main-footer .icons ul li{
     display: flex;
     flex-wrap: wrap; /* Wrap after the items fill the row */
     
-    /* Safari specific rules */
+    /* Safari specific rules 
     display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;*/
 }
 .th{
     border-bottom:1px solid #bbb  !important;
@@ -1030,6 +1059,10 @@ footer .main-footer .icons ul li{
     height: 300px;
 }
 
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* --------------------------
    8. Media Screen
