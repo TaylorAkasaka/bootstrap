@@ -16,7 +16,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: sans-serif !important;
     color: #666;
     margin-top: 75px;
 }
@@ -373,7 +373,7 @@ header .menu ul li ul li ul {
 
 .first-content .pic {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -401,13 +401,7 @@ header .menu ul li ul li ul {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.first-content .pic .content h3 {
-    text-transform: uppercase;
-    font-size: 50px;
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 3px;
-}
+
 .index2-content {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -941,7 +935,6 @@ footer{
     position: relative;
     font-size: 14px;
     line-height: 23px;
-    font-family: 'Josefin Sans', sans-serif;
 
 }
 footer .main-footer{
@@ -969,6 +962,11 @@ footer .main-footer .icons ul li{
 }
 
 
+.line50{
+    border-bottom: solid 1px #e5e5e5;
+    margin: 10px 0;
+}
+
 /* 会社情報CSS */
 .info {
     font-family: "メイリオ","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro, Osaka", "ＭＳ Ｐゴシック", "Meiryo, MS PGothic, sans-serif" !important;
@@ -979,8 +977,18 @@ footer .main-footer .icons ul li{
     width: 100%;
     margin: 0 0 40px;
 }
+.h1TxtVer111 {
+    clear: both;
+    width: 100%;
+    margin: 70px 0 20px 0;
+}
+
+.frame1{
+    margin: 0 0 20px 0;
+}
+
 .topTxt {
-    margin: 0 0 70px 0;
+    margin: 0 0 40px 0;
 }
 .address {
     margin: 0 0 70px 0;
@@ -1015,21 +1023,11 @@ footer .main-footer .icons ul li{
 	padding: 8px 0;
 }
 
-.footerInner {
-	width: 960px;
-	margin: 0 auto;
-}
-.ulFooter06 {
-	float: left;
-}
-.ulFooter06 a {
-	float: left;
+.main-footer a {
 	margin: 0 25px 0 0;
-	font-size: 78.6%;
     color: #666;
 }
 .footerInner div {
-	float: right;
 	font-size: 78.6%;
 }
 
@@ -1044,6 +1042,15 @@ footer .main-footer .icons ul li{
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;*/
 }
+
+.tablefooter{
+    display: flex;
+    flex-wrap: wrap; /* Wrap after the items fill the row */  
+    /* Safari specific rules 
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;*/
+}
+
 .th{
     border-bottom:1px solid #bbb  !important;
     border-left:1px solid #bbb  !important;
@@ -1085,11 +1092,7 @@ footer .main-footer .icons ul li{
 }
 
 
-@media screen and (max-width:768px){
-
-    .first-content .pic {
-        height: calc(60vh - 75px);
-    }
+@media screen and (max-width:1000px){
 
     .first-content .pic .content h3 {
         font-size: 30px;
@@ -1117,4 +1120,37 @@ footer .main-footer .icons ul li{
        float:left;
     }
 
+}
+
+.contact-content .h1TxtVer111 h2 {
+    margin: 0 0 30px;
+    padding: 0 0 10px;
+    font-size: 185.7%;
+    line-height: 1.25;
+    font-weight: bold;
+    border-bottom: solid #e5e5e5 1px;
+}
+.contact-content .h1TxtVer111 h5 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    font-size: 120%;
+    font-weight: bold;
+}
+.contact-content .h1TxtVer111 h6 {
+    margin: 10px 0 10px;
+    padding: 0 0 10px;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.contact-content .h1TxtVer h1 {
+    font-size: 250%;
+    line-height: 1;
+    font-weight: bold;
+    font-family: "メイリオ","HGP明朝B", "ＭＳ Ｐ明朝", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", Meiryo;
+}
+
+.imgsize{
+    width: 60px;
+    height: 60px;
 }
