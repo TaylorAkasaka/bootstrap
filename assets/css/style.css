@@ -373,12 +373,14 @@ header .menu ul li ul li ul {
 
 .first-content .pic {
     width: 100%;
-    height: 700px;
+    min-height: 200px;
+    height: auto;
+    max-height: 515px;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
     position: relative !important;
-    background-attachment: fixed !important;
+    /*background-attachment: fixed !important;*/
 }
 
 .first-content .about-picture {
@@ -647,9 +649,7 @@ header .menu ul li ul li ul {
 .blog-firstsection .items2 {
     padding-top: 40px;
 }
-.blog-firstsection .col-md-6 {
-    float: right;
-}
+
 .blog-firstsection .pic-inner span {
     color: #763A31;
 }
@@ -971,11 +971,17 @@ footer .main-footer .icons ul li{
 .info {
     font-family: "メイリオ","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro, Osaka", "ＭＳ Ｐゴシック", "Meiryo, MS PGothic, sans-serif" !important;
     display: block;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
+
+.shadow{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
 .h1TxtVer {
     clear: both;
     width: 100%;
-    margin: 0 0 40px;
+    margin: 20px 0 40px;
 }
 .h1TxtVer111 {
     clear: both;
@@ -1015,6 +1021,11 @@ footer .main-footer .icons ul li{
 
 .font17{
     font-size: 17px;
+}
+.font18{
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
 }
 
 .footer {
@@ -1058,8 +1069,8 @@ footer .main-footer .icons ul li{
     line-height:3.0 !important;
 }
 .tdbgd{
-    background:#ddd; 
     font-weight:normal; 
+    background-image: linear-gradient(45deg, #7A88FF, #7AFFAF);
 }
 
 .aaa{
@@ -1149,8 +1160,20 @@ footer .main-footer .icons ul li{
     font-weight: bold;
     font-family: "メイリオ","HGP明朝B", "ＭＳ Ｐ明朝", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", Meiryo;
 }
+.contact-content .h1TxtVer h2 {
+    text-align: center;
+    font-size: 250%;
+    line-height: 1;
+    font-weight: bold;
+    font-family: "メイリオ","HGP明朝B", "ＭＳ Ｐ明朝", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", Meiryo;
+}
 
 .imgsize{
     width: 60px;
     height: 60px;
+}
+
+.rectimg{
+    width: 100%;
+    height: 100%;
 }
