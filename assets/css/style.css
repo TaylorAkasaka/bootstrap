@@ -1179,3 +1179,12 @@ footer .main-footer .icons ul li{
     width: 100%;
     height: 100%;
 }
+
+.size7{
+    font-size: 100px;
+    text-align: center;    
+    background-color:red;      
+    border-radius: 50%;      
+    -moz-border-radius: 50%;      
+    -webkit-border-radius: 50%;
+}
