@@ -304,7 +304,7 @@ header .logo a{
 header .logo h2 {
     font-size: 35px;
     font-family: 'Quicksand', sans-serif;
-    line-height: 75px;
+    line-height: 68px;
 }
 header .menu ul {
     font-size: 12px;
@@ -574,23 +574,25 @@ header .menu ul li ul li ul {
    4. Blog and Blog Single
    -------------------------- */
 
-.blog-firstsection {
+.business {
     padding: 20px 0;
 }
-.blog-firstsection .pic-inner {
+.business .pic-inner {
     border: 1px solid #ddd;
     border-top: none;
     margin-bottom: 30px;
-    padding: 10px 25px;
+    padding: 10px 25px 30px;
+    background-color: white;
+    opacity: 1;
 }
-.blog-firstsection .pic-inner h3 {
+.business .pic-inner h3 {
     font-size: 30px;
     color: #000000;
     letter-spacing: 2px;
     padding-bottom: 10px;
     padding-top: 15px;
 }
-.blog-firstsection .pic-inner h3 a{
+.business .pic-inner h3 a{
     font-size: 30px;
     color: #000000;
     letter-spacing: 2px;
@@ -640,20 +642,44 @@ header .menu ul li ul li ul {
     font-size:13px;
 }
 
-.blog-firstsection .picture img{
+.business .picture img{
     width:100%;
+    height: 400px;
 }
-.blog-firstsection .pic-inner p {
-    padding-top: 10px;
-}
-.blog-firstsection .items2 {
+
+.business .items2 {
     padding-top: 40px;
 }
 
-.blog-firstsection .pic-inner span {
+@media screen and (max-width: 1100px) and (min-width: 400px){
+    .business .picture img{
+        height: 300px;
+    }
+    .business .items2 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .business .picture img{
+        height: 200px;
+    }
+    .business .items2 {
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.business .pic-inner p {
+    padding-top: 10px;
+}
+
+.business .pic-inner span {
     color: #763A31;
 }
-.blog-firstsection .pic-inner .btn {
+.business .pic-inner .btn {
     height: 35px;
     background-color: #dcdcdc;
     margin-bottom: 30px;
@@ -1071,8 +1097,7 @@ footer .main-footer .icons ul li{
     line-height:3.0 !important;
 }
 .tdbgd{
-    font-weight:normal; 
-    background-image: linear-gradient(45deg, #7A88FF, #7AFFAF);
+    font-weight:normal;
 }
 
 .aaa{
@@ -1175,7 +1200,123 @@ footer .main-footer .icons ul li{
     height: 60px;
 }
 
+.companyname{
+    width: 150px;
+    height: 65px;
+}
+
 .rectimg{
     width: 100%;
     height: 100%;
+}
+.size7{
+    font-size: 120px;
+    text-align: center;
+}
+
+.icocss{
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icoimg{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 50px;
+}
+
+.size8{
+    background-image: linear-gradient(180deg, #ACB6E5, #74ebd5);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.icotext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: auto;
+    word-wrap:break-word;
+    word-break:break-all;
+    overflow: hidden;
+}
+.icosize{
+    width: 50%;
+    height: 50%;
+}
+
+.headcss{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.topimg{
+    width: 100%;
+    height: 500px;
+    position: relative !important;
+    overflow:hidden;
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px){
+    .topimg{
+        height: 300px;
+    }
+}
+
+.zoomImage{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size:cover !important;
+    -moz-background-size:cover !important;
+    background-size:cover !important;
+    position: absolute  !important;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 1000px){
+    .zoomImage{
+        background-position: center bottom -200px !important;
+    }
+}
+
+.zoomImageCenter{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size:cover !important;
+    -moz-background-size:cover !important;
+    background-size:cover !important;
+    position: absolute  !important;
+    background-attachment: fixed;
+}
+
+.homeImage{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    -webkit-background-size:cover !important;
+    -moz-background-size:cover !important;
+    background-size:cover !important;
+    position: absolute  !important;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 1000px){
+    .homeImage{
+        background-position: center center !important;
+    }
 }
