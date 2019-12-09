@@ -18,6 +18,9 @@
 /* --------------------------
    1. Globally Applied Styles
    -------------------------- */
+[data-toggle~="“collapse”"] {
+  cursor: pointer;
+}
 body {
   margin: 0;
   padding: 0;
@@ -408,7 +411,7 @@ header .logo {
   clear: both;
   width: 800px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -449,26 +452,78 @@ header .logo {
   margin-top: 70px;
   margin-bottom: 70px;
 }
-@media screen and (max-width: 820px) {
-  .new {
-    width: auto;
-  }
-}
 .new th {
   background: #ddd;
   font-weight: normal;
 }
 .new h2 {
-  padding: 0 0 10px !important;
+  padding: 0 0 10px;
   font-size: 185.7%;
   line-height: 1.25;
+  padding-left: 0px !important;
   font-weight: normal;
 }
+.new h2:before {
+  background-color: #d1ad5a;
+  content: "";
+  display: inline-block;
+  height: 25px;
+  margin-right: 8px;
+  vertical-align: -8%;
+  width: 2px;
+}
 .new .line {
-  height: 1px;
-  width: 50px;
-  background-color: #2e86c1;
-  margin: 0 0 30px;
+  border-top: 1px dotted #d8d8d8;
+  color: #313131;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 15px 0 10px;
+}
+.new .new_data {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 0px !important;
+}
+.new .new_data li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.new .new_data_year {
+  padding-left: 10px;
+}
+.container_press {
+  margin-top: 15px;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.new .new_data_company {
+  font-weight: 600;
+  margin-left: 10px;
+}
+.new .new_data_category {
+  background-color: #d2d2d2;
+  border-radius: 2px;
+  display: inline;
+  float: none;
+  font-size: 9px;
+  margin-left: 10px;
+  padding: 3px 5px 4px;
+  vertical-align: middle;
+  color: #3d3d3d;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.new .new_txt {
+  line-height: 21px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 820px) {
+  .new {
+    width: auto;
+  }
 }
 .table {
   border-top: 1px solid #bbb !important;
@@ -550,7 +605,8 @@ header .logo {
 }
 @media screen and (max-width: 470px) {
   .brackets .brackets_txt {
-    width: auto;
+    width: 280px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 470px) {
@@ -648,6 +704,10 @@ header .logo {
   padding: 50px 0;
   font-family: "Palanquin", sans-serif;
 }
+.floatright {
+  float: right;
+  margin: 5px;
+}
 /* --------------------------
    4-1. Info1
    -------------------------- */
@@ -655,7 +715,6 @@ header .logo {
 .font18 {
   font-size: 17px;
   line-height: 50px;
-  text-align: center;
 }
 .contact-content .h1TxtVer h2 {
   text-align: center;
@@ -666,12 +725,71 @@ header .logo {
 /* --------------------------
    4-2. Info2
    -------------------------- */
+.frame {
+  margin-top: 100px;
+}
+h1:before {
+  background-color: #d1ad5a;
+  content: "";
+  display: inline-block;
+  height: 33px;
+  margin-right: 15px;
+  vertical-align: -8%;
+  width: 4px;
+}
+.frame p {
+  word-wrap: break-word;
+  padding-right: 5px;
+}
+/*TOP*/
+.info2css {
+  clear: both;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+@media screen and (max-width: 440px) {
+  .info2css {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .frame p {
+    padding-right: 0px;
+  }
+}
+.contact-content .info2css h1 {
+  line-height: 1;
+  /*color: rgb(166, 166, 241);*/
+  padding-bottom: 20px;
+}
+.contact-content .info2css h3 {
+  padding-bottom: 10px;
+}
+.contact-content .info2css p {
+  line-height: 2;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
 /*Text*/
+.nopadding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  display: flex;
+  flex-direction: column;
+}
+.marginbottom {
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
 .icoimg {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 .icosize {
   width: 50%;
@@ -692,13 +810,35 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
   height: auto;
   word-wrap: break-word;
   word-break: break-all;
   overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.info2 {
+.icotextsamll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.icotextsamll h4 {
+  width: 50%;
+  text-align: center;
+}
+.icotextsamll h5 {
+  width: 50%;
+  font-size: 11pt;
+  line-height: 1.6;
+  text-align: center;
+}
+/*.info2 {
   order: 1px solid #ddd;
   border-top: none;
   margin-bottom: 40px;
@@ -717,12 +857,21 @@ header .logo {
 /* --------------------------
    5. Business
    -------------------------- */
+.business .items2 {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
 .business {
   padding: 20px 0;
 }
 .business .pic-inner {
   border: 1px solid #ddd;
   border-top: none;
+  height: 250px;
   margin-bottom: 30px;
   padding: 10px 25px 30px;
   background-color: white;
@@ -747,26 +896,33 @@ header .logo {
   width: 100%;
   height: 400px;
 }
-.business .items2 {
-  padding-top: 40px;
-}
-@media screen and (max-width: 1100px) and (min-width: 400px) {
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
   .business .picture img {
     height: 300px;
   }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 440px) {
+  .business .picture img {
+    height: 400px;
+  }
   .business .items2 {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media screen and (max-width: 440px) {
   .business .picture img {
-    height: 200px;
+    height: 250px;
   }
   .business .items2 {
     padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .business .pic-inner {
+    height: 280px;
   }
 }
 .business .pic-inner p {
@@ -788,12 +944,20 @@ header .logo {
 .shadow {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
-.tablecell {
-  display: table-cell;
-}
 /* --------------------------
    6. Company
    -------------------------- */
+.marginfour {
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+@media screen and (max-width: 440px) {
+  .marginfour {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
 /*Image*/
 .zoomImage {
   width: 100%;
@@ -833,11 +997,17 @@ header .logo {
   line-height: 1.25;
   font-weight: normal;
 }
+.address h2:before {
+  background-color: #d1ad5a;
+  content: "";
+  display: inline-block;
+  height: 25px;
+  margin-right: 8px;
+  vertical-align: -8%;
+  width: 2px;
+}
 .address .line {
-  height: 1px;
-  width: 50px;
-  background-color: #ba7800;
-  margin: 0 0 30px;
+  margin-bottom: 10px;
 }
 .map {
   line-height: 1.6;
@@ -845,7 +1015,6 @@ header .logo {
 .contact-content {
   padding: 80px 0;
 }
-
 .contact-content .item {
   font-size: 23px;
   padding-bottom: 30px;
@@ -854,8 +1023,16 @@ header .logo {
   margin-bottom: 30px;
 }
 .contact-content .items h3 {
-  text-transform: uppercase;
   font-size: 22px;
+}
+.contact-content .items h3:before {
+  background-color: #d1ad5a;
+  content: "";
+  display: inline-block;
+  height: 23px;
+  margin-right: 8px;
+  vertical-align: -8%;
+  width: 2px;
 }
 .contact-content .items p {
   line-height: 20px;
@@ -865,17 +1042,9 @@ header .logo {
 .contact-content .items2 {
   text-align: left;
 }
-.contact-content .items .line {
-  height: 1px;
-  width: 50px;
-  background-color: #ba7800;
-  margin: 10px 0;
-}
+
 .contact-content .items .line-right {
   float: right;
-}
-.contact-content form {
-  width: 100%;
 }
 .contact-content form input,
 .contact-content form textarea {
@@ -901,22 +1070,70 @@ header .logo {
   float: right;
   background: transparent;
 }
+div.history {
+  margin-left: 30px;
+}
+div.history .block {
+  line-height: 30px;
+  text-align: center;
+}
+div.history .block .entry::before {
+  position: absolute;
+  top: 7px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-left: -10.1px;
+  border-radius: 8px;
+  background: #e2e2e2;
+  behavior: url(border-radius.htc);
+}
+div.history .block .year {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: right;
+  vertical-align: top;
+  border-right: #e2e2e2 solid 4px;
+}
+div.history .block .entry {
+  text-align: left;
+  vertical-align: top;
+  padding-left: 0px;
+}
+.entry p {
+  padding-left: 20px;
+}
+@media screen and (max-width: 440px) {
+  div.history {
+    margin-left: 0px;
+  }
+  .entry p {
+    padding-left: 20px;
+  }
+}
 /* --------------------------
    7. Recruit
    -------------------------- */
 .recruitcss {
   clear: both;
-  width: 100%;
-  margin: 20px 0 40px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+@media screen and (max-width: 440px) {
+  .recruitcss {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 .contact-content .recruitcss h1 {
   line-height: 1;
-  /*color: rgb(166, 166, 241);*/
+  /*color: rgb(166, 166, 241);
   font-weight: 400;
   font-size: 45px;
   margin-top: 2vw;
   margin-bottom: 1vw;
-  padding-bottom: 20px;
+  padding-bottom: 20px;*/
 }
 .contact-content .recruitcss h3 {
   padding-bottom: 10px;
@@ -927,7 +1144,10 @@ header .logo {
   padding-bottom: 40px;
 }
 .work {
-  margin: 0 0 70px 0;
+  margin-bottom: 70px;
+}
+.recruitcss h1 {
+  margin-bottom: 20px;
 }
 .work .line {
   height: 1px;
@@ -955,8 +1175,8 @@ header .logo {
   display: flex;
   flex-wrap: wrap; /* Wrap after the items fill the row */
   /* Safari specific rules 
-    display: -webkit-flex;
-    -webkit-flex-wrap: wrap;*/
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;*/
 }
 .th_work {
   border-bottom: 1px solid #bbb;
@@ -974,6 +1194,12 @@ header .logo {
   .th_work_xs_noline {
     border-bottom: 0px solid white !important;
   }
+}
+.panel-body::before {
+  display: none !important;
+}
+.row::before {
+  display: none !important;
 }
 /* --------------------------
    8. Privacy/Person
