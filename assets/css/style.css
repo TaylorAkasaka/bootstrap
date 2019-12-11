@@ -704,6 +704,21 @@ header .logo {
   float: right;
   margin: 5px;
 }
+.nameImg {
+  float: right;
+  height: 150px;
+  width: 250px;
+  padding-bottom: 20px;
+}
+.staff {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .staff {
+    margin: 0 40px 40px 40px;
+  }
+}
 /* --------------------------
    4-1. Info1
    -------------------------- */
@@ -763,7 +778,6 @@ h1:before {
 .contact-content .info2css p {
   line-height: 2;
   font-size: 18px;
-  padding-bottom: 10px;
 }
 /*Text*/
 .nopadding {
