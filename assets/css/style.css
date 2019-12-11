@@ -24,9 +24,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "メイリオ", "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic Pro, Osaka", "ＭＳ Ｐゴシック",
-    "Meiryo, MS PGothic, sans-serif" !important;
+  font-family: "Noto Sans JP", sans-serif, "Noto Serif JP", serif !important;
   margin-top: 75px;
 }
 img {
@@ -289,7 +287,6 @@ header .menu ul {
 header .menu ul li {
   display: inline;
   margin-right: 20px;
-  font-family: "Palanquin", sans-serif;
   letter-spacing: 2px;
   position: relative;
 }
@@ -299,7 +296,7 @@ header .menu ul li:hover {
 header .menu ul li a {
   text-decoration: none;
   color: inherit;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }
 header .menu ul li .active {
   border-bottom: 2px solid #f00;
@@ -702,7 +699,6 @@ header .logo {
   font-size: 15px;
   text-align: center;
   padding: 50px 0;
-  font-family: "Palanquin", sans-serif;
 }
 .floatright {
   float: right;
@@ -837,6 +833,11 @@ h1:before {
   font-size: 11pt;
   line-height: 1.6;
   text-align: center;
+}
+@media screen and (max-width: 440px) {
+  .icotextsamll h5 {
+    width: 80%;
+  }
 }
 /*.info2 {
   order: 1px solid #ddd;
@@ -991,6 +992,16 @@ h1:before {
   background: #ddd;
   font-weight: normal;
 }
+@media screen and (max-width: 440px) {
+  .lineheight {
+    padding-top: 10px;
+    line-height: 1.5 !important;
+    padding-bottom: 10px;
+  }
+  .noborder {
+    border-bottom: 0px dotted #bbb !important;
+  }
+}
 .address h2 {
   padding: 0 0 10px;
   font-size: 185.7%;
@@ -1070,46 +1081,81 @@ h1:before {
   float: right;
   background: transparent;
 }
-div.history {
-  margin-left: 30px;
+.timeline-small {
+  max-width: 410px;
+  overflow: hidden;
 }
-div.history .block {
-  line-height: 30px;
-  text-align: center;
+.timeline-small-body ul {
+  padding: 0 0 0 0.5em;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 0;
 }
-div.history .block .entry::before {
+.timeline-small-body ul::before {
+  content: " ";
+  height: 100%;
+  width: 2px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(192, 192, 238),
+    #e2ebe9
+  ) !important;
   position: absolute;
-  top: 7px;
-  content: "";
-  width: 16px;
-  height: 16px;
-  margin-left: -10.1px;
-  border-radius: 8px;
-  background: #e2e2e2;
-  behavior: url(border-radius.htc);
+  top: 0;
+  left: 0.8em;
+  z-index: -1;
 }
-div.history .block .year {
+.timeline-small-body li div {
+  display: inline-block;
+  margin: 1em 0;
+  vertical-align: top;
+}
+.timeline-small-body .bullet {
+  width: 1rem;
+  height: 1rem;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  text-align: right;
-  vertical-align: top;
-  border-right: #e2e2e2 solid 4px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 1;
+  margin-right: 1rem;
+  margin-top: 25px;
 }
-div.history .block .entry {
-  text-align: left;
-  vertical-align: top;
-  padding-left: 0px;
+.timeline-small-body .bullet.pink {
+  background-color: lightseagreen;
+  border: 3px solid #b0e8e2;
 }
-.entry p {
-  padding-left: 20px;
+.timeline-small-body .bullet.green {
+  background-color: lightseagreen;
+  border: 3px solid #b0e8e2;
 }
-@media screen and (max-width: 440px) {
-  div.history {
-    margin-left: 0px;
-  }
-  .entry p {
-    padding-left: 20px;
-  }
+.timeline-small-body .bullet.blue {
+  background-color: lightseagreen;
+  border: 3px solid #b0e8e2;
+}
+.timeline-small-body .bullet.orange {
+  background-color: lightseagreen;
+  border: 3px solid #b0e8e2;
+}
+.timeline-small-body .date {
+  width: 33%;
+  font-size: 1.05em;
+  padding-top: 0.4rem;
+  padding-right: 2rem;
+}
+.timeline-small-body .desc {
+  width: 59%;
+}
+.timeline-small-body h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 0;
+}
+.timeline-small-body h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #808080;
 }
 /* --------------------------
    7. Recruit
@@ -1170,6 +1216,9 @@ div.history .block .entry {
     #e2ebe9
   ) !important;
 }
+.panel a {
+  text-decoration: none;
+}
 .table_work {
   margin: 0 0 10px 0;
   display: flex;
@@ -1219,7 +1268,7 @@ div.history .block .entry {
 }
 .contact-content .h1TxtVer111 h5 {
   margin: 0 0 10px;
-  padding: 0 0 10px;
+  padding: 30px 0 10px;
   font-size: 120%;
   font-weight: bold;
 }
