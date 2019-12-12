@@ -138,6 +138,7 @@ ol {
   outline: 0;
   color: #fff;
   font-size: 14px;
+  font-weight: bold;
   padding: 5px 0;
   position: relative;
   text-decoration: none;
@@ -715,8 +716,21 @@ header .logo {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
+  .nameImg {
+    height: 100px;
+    width: 230px;
+  }
   .staff {
     margin: 0 40px 40px 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nameImg {
+    height: 110px;
+    width: 190px;
+  }
+  .staff {
+    margin: 0 5px 40px 5px;
   }
 }
 /* --------------------------
