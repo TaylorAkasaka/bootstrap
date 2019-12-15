@@ -1174,6 +1174,7 @@ h1:before {
 .timeline-small-body .desc {
   width: 59%;
 }
+
 .timeline-small-body h3 {
   font-size: 1.3em;
   font-weight: 400;
@@ -1184,6 +1185,19 @@ h1:before {
   font-size: 1.1em;
   font-weight: 400;
   color: #808080;
+}
+@media screen and (max-width: 440px) {
+  .timeline-small-body .date {
+    padding-right: 2px;
+    width: auto !important;
+  }
+  .timeline-small-body .desc {
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .timeline-small-body .bullet {
+    margin-right: 5px;
+  }
 }
 /* --------------------------
    7. Recruit
